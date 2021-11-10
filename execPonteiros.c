@@ -5,10 +5,10 @@ void minimax(int *v, int tam, int *min, int *max){
     *min = *v;
     *max = *v;
      for(i = 1; i < tam; i++){
-        if(*menor > *(vet + i))
-            *menor = *(vet + i);
-        if(*maior < *(vet + i))
-            *maior = *(vet + i);
+        if(*min > *(v + i))
+            *min = *(v + i);
+        if(*max < *(v + i))
+            *max = *(v + i);
     }
 }
 
